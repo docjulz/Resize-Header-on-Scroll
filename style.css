@@ -20,8 +20,6 @@ span {
     background-size: cover;
     height: 100vh;
     background-position: center;
-    /* background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 }
 
 header {
@@ -91,7 +89,7 @@ nav a:hover {
     background-color: whitesmoke;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
-    width: 350px;
+    max-width: 25%;
     height: auto;
     margin: 20px;      
 }
@@ -170,22 +168,6 @@ nav a:hover {
 }
 
 
-/* 
-.section-2 {
-    padding: 20px;
-    padding-left: 60px;
-}
-.section-2 h1 {
-    padding: 20px;
-    font-size: 40px;
-}
-.section-2 p {
-    padding: 20px;
-    line-height: 1.4em;
-    font-size: 18px;
-} */
-
-
 /**************
 *  BGC Stuff  *
 ***************/
@@ -208,7 +190,7 @@ nav a:hover {
 /******************
 *  MEDIA QUERIES  *
 *******************/
-@media (max-width: 920px) {
+@media (max-width: 1100px) {
     header {
         flex-direction: column;
         padding: 20px;
@@ -221,8 +203,27 @@ nav a:hover {
         margin: 0;
     }
     .card-1 {
-        width: 80%;
+        max-width: 40%;
     }
 
     
 }
+@media (max-width: 800px) {
+    /* header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    nav {
+        padding: 15px;
+        margin: 0;
+    } */
+    .card-1 {
+        min-width: 80%;
+    }
+
+    
+}
+
