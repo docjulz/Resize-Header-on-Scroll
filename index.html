@@ -21,7 +21,7 @@
     </section>
 
     <div class="section-header">Section 2</div>
-    <section class="section-2">
+    <section class="section-2" id="content">
         
         
         <div class="card-1">
@@ -58,15 +58,23 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
     <script>
+        // $(document).ready(function() {
+        //     $(window).on('scroll', function() {
+        //         if($(window).scrollTop()) {
+        //             $("header").addClass('bgc')
+        //         }else {
+        //             $("header").removeClass('bgc')
+        //         }
+        //     });
+        // });
         $(document).ready(function() {
             $(window).on('scroll', function() {
-                if($(window).scrollTop()) {
-                    $("header").addClass('bgc')
-                }else {
-                    $("header").removeClass('bgc')
+                $(window).scrollTop() ? $("header").addClass('bgc') :  $("header").removeClass('bgc')
                 }
-            });
+            );
         });
     </script>
+
+
 </body>
 </html>
